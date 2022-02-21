@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   <nav><div class="nav">ROCK PAPER SCISSOR
+    <button  id="about">About</button>
+   </div>
+   </nav>
+
+   <div class="aboutModal">
+       
+       <div class="aboutContent">
+        <div class="close">❌</div>
+        The rock is a closed fist; 
+        paper is a flat hand with fingers and thumb
+         extended and the palm facing downward; 
+         and scissors is a fist with the index and 
+         middle fingers fully extended toward the 
+         opposing player.<br></br> Rock wins against scissors; 
+         paper wins against rock;
+         and scissors wins against paper.<br></br> 
+         Choose any one of them.The hand signals are given simultaneously by both players. <br></br> 
+         The ritual used to get players in sync with each other so they can deliver their throws simultaneously is 
+         called the prime. <br></br> This action requires retracting the player’s fist from full-arm extension towards the 
+         shoulder and then back to full extension.
+          To ensure a fair match the players must be in sync with their primes. 
+
+       </div>
+   </div>
+
+   <div class="playerModal" >
+       <div class="player2">
+           <input type="text" placeholder="Enter your name" id="modalName">
+           <button type="submit" id="done" class="btn">✅Done</button>
+       </div>
+   </div>
+
+   <div class="hands">
+       <img src="img/rock.svg" alt="Rock" class="rock" onclick="rock()">
+       <img src="img/paper.svg" alt="Paper" class="paper" onclick="paper()">
+       <img src="img/scissor.svg" alt="Scissor" class="scissor" onclick="scissor()">
+   </div>
+
+   
+       <div class="name">Your Name</div>
+
+       <div class="under">
+           <div id="underline"></div>
+       </div>
+   
+
+   
+       <div class="control">
+       <!--Will reload page--->
+       <button class="restart btn" onclick="restart()">Restart</button>
+       <!--will restart game and set score to zero-->
+       <button class="reset btn" onclick="reset()">Reset</button>
+    </div>
+
+    
+        <div class="message">Pick your pick !</div>
+        <div class="score">
+            <div class="my">You: __</div>
+            <div class="comp">Computer: __</div>
+        </div>
+   
+   
+
+   <script src="app.js"></script>
+
+</body>
+</html>
