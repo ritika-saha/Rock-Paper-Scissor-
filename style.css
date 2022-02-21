@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+body{
+    background-image: repeating-linear-gradient(
+        to left,
+         #a4a2ad 5%,
+         rgb(136, 189, 189) 10%
+    );
+   
+}
+  
+
+nav{
+    width: 100%;
+    background-color:#242333 ;
+    color:white;
+    height: 130px;
+    justify-content: center;
+    display: flex;
+}
+
+.nav{
+   display: block;
+   position: absolute;
+   justify-self: center;
+   top: 35px;
+   font-size: 35px;
+    
+}
+#about{
+    margin-left: 60px;
+    justify-self: center;
+    top: 35px;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: #242333;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.aboutModal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+.aboutContent{
+    width: 40%;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 100%;
+    text-align:left;
+    padding: 40px 1px 1px 12px;
+    overflow: scroll;
+    position: relative;
+    background-color: #242333;
+    color: white;
+}
+
+.close{
+    position: absolute;
+    top:0;
+    right: 3px;
+    cursor: pointer;
+    
+}
+
+.playerModal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 192, 177, 0.5);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.player2{
+    max-width: 50%;
+    max-height: 300px;
+    border-radius: 4px;
+    font-size: 200%;
+    padding: 10%;
+}
+
+.player2 input{
+    max-width: 100%;
+    padding: 18px;
+    font-size: 60%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    color:red;
+    border-bottom: solid 3px red;
+}
+
+.hands{
+    display: none;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    
+   
+}
+
+img{
+   
+    margin:2% 5% 2% 5%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.rock{
+    display: flex;
+}
+
+.paper{
+    display: flex;
+}
+
+.scissor{
+    display: flex;
+}
+img:hover{
+    cursor: pointer;
+}
+
+img:nth-child(1):hover{
+    box-shadow: 5px 10px 8px 10px #a09eb1;
+}
+img:nth-child(2):hover{
+    box-shadow: 5px 10px 8px 10px #9cbd99;
+
+}
+img:nth-child(3):hover{
+    box-shadow: 5px 10px 8px 10px #b99fb9;
+
+}
+.name{
+    display: flex;
+    justify-content: center;
+    font-size: 160%;
+    padding-top: 25px;
+   
+
+}
+
+.under {
+    display: flex;
+    justify-content: center;
+}
+
+#underline {
+    display: flex;
+    width: 30%;
+    border-top: 2px solid #242333;
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    color: white;
+    background-color: #242333;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #242333;
+    background-color: azure;
+    border:2px solid #242333;
+}
+
+#about:hover{
+    cursor: pointer;
+    background-color: #242333;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    font-size: 130%;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    font-size: 120%;
+    font-weight: bolder;
+    width: 100%;
+}
+
+
+
+
